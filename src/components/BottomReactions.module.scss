@@ -1,0 +1,49 @@
+.BottomReactions {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ReactionsLayout {
+  grid-column: 3 / auto;
+}
+
+.Reactions {
+  align-items: center;
+  display: flex;
+  grid-column: 3 / auto;
+  text-align: center;
+  padding-top: 10px;
+
+  label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .emojis {
+    color: rgb(60, 60, 59);
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .emoji-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 7px;
+    position: relative;
+  }
+
+  .emoji {
+    height: 30px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transform: scale(1);
+    cursor: pointer;
+  }
+}

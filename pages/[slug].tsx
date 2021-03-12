@@ -7,6 +7,8 @@ import styles from "./[slug].module.scss";
 
 import StoryMeta from "../src/components/StoryMeta";
 import Profile from "../src/components/Profile";
+import BottomReactions from '../src/components/BottomReactions';
+import Footer from '../src/components/Footer';
 
 export default function Post({ data }) {
   return (
@@ -23,6 +25,8 @@ export default function Post({ data }) {
         </div>
         <Profile />
         {ReactHtmlParser(data.markup)}
+        <BottomReactions />
+        <Footer />
       </div>
     </main>
   );

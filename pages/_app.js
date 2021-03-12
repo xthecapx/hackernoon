@@ -6,9 +6,14 @@ import SubNav from "../src/components/SubNav";
 import TopNavAd from "../src/components/TopNavAd";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faSun, faStar, faBookmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSun,
+  faStar,
+  faBookmark,
+  faUserAstronaut,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faSun, faStar, faBookmark);
+library.add(faSun, faStar, faBookmark, faUserAstronaut);
 
 function MyApp({ Component, pageProps }) {
   return (
