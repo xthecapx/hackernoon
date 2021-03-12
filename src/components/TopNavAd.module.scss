@@ -1,0 +1,23 @@
+.TopNavAd {
+  background-color: rgb(245, 236, 67);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+
+  a {
+    align-items: center;
+    color: rgb(102, 97, 5) !important;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  img {
+    border-radius: 2px;
+    border-style: none;
+    margin-right: 10px;
+    width: 25px;
+  }
+}

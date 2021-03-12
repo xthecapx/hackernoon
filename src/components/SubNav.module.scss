@@ -1,0 +1,33 @@
+.SubNav {
+  background-color: rgb(0, 59, 0);
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  position: relative;
+}
+
+.LinkList {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+
+  li {
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    a {
+      color: rgb(0, 255, 0);
+      text-decoration: none;
+    }
+  }
+
+  .Sponsor {
+    a {
+      color: rgb(246, 247, 249);
+    }
+  }
+}
