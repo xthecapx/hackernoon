@@ -1,17 +1,26 @@
 import React from "react";
 import Head from "next/head";
-
 import { GetServerSideProps } from "next";
 
-export default function Post({ data, errorCode }) {
+import styles from "./[slug].module.scss";
+
+import StoryMeta from "../src/components/StoryMeta";
+
+export default function Post({ data }) {
   return (
-    <>
+    <main className={styles["Page__Content"]}>
       <Head>
         <title>{data.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>{"console log post"}</div>
-    </>
+      <div className={styles.Container}>
+        <h1>{data.title}</h1>
+        <StoryMeta />
+        <div className={styles.ImageContainer}>
+          <img src={data.mainImage} />
+        </div>
+      </div>
+    </main>
   );
 }
 

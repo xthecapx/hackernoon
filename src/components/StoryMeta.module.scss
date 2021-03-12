@@ -1,0 +1,53 @@
+.StoryMetaLayout {
+  color: rgb(60, 60, 59);
+  display: grid;
+  font-size: 1.6rem;
+  gap: 20px;
+  grid-column: 1 / -1;
+  grid-template-columns: auto 1fr;
+  text-align: center;
+  transition: color 200ms ease 0s;
+}
+
+.StoryMeta {
+  -webkit-box-align: center;
+  -webkit-box-pack: end;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    align-self: baseline;
+    border-radius: 2px;
+    color: rgb(60, 60, 59);
+    margin-left: 0px;
+    padding: 4px 0px;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+}
+
+.stat {
+  background: rgb(246, 247, 249);
+  color: rgb(60, 60, 59);
+  padding: 4px 10px;
+  margin: 0px 10px;
+  font-size: 1.6rem;
+  text-align: center;
+
+  svg {
+    width: 1.6rem;
+  }
+}
+
+.Bookmark {
+  background: transparent;
+  border: none;
+  color: rgb(60, 60, 59);
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0px;
+  right: 0px;
+  top: 5px;
+  width: 16px;
+}

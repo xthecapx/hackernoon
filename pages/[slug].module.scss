@@ -1,0 +1,36 @@
+.Page {
+  &__Content {
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: center;
+  }
+}
+
+.Container {
+  display: grid;
+  font-size: 2rem;
+  gap: 2.5rem 25px;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 3.5rem auto;
+  max-width: 1200px;
+  width: 100%;
+
+  > h1 {
+    font-size: 2em;
+    grid-column: 1 / -1;
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+.ImageContainer {
+  grid-column: 1 / -1;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+}
