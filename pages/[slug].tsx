@@ -1,10 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import { GetServerSideProps } from "next";
+import ReactHtmlParser from "react-html-parser";
 
 import styles from "./[slug].module.scss";
 
 import StoryMeta from "../src/components/StoryMeta";
+import Profile from "../src/components/Profile";
 
 export default function Post({ data }) {
   return (
@@ -19,6 +21,8 @@ export default function Post({ data }) {
         <div className={styles.ImageContainer}>
           <img src={data.mainImage} />
         </div>
+        <Profile />
+        {ReactHtmlParser(data.markup)}
       </div>
     </main>
   );

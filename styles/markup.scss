@@ -1,0 +1,50 @@
+.youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.code-container {
+  min-width: 0px;
+  grid-column: 1 / -1 !important;
+  padding: 10px;
+
+  pre {
+    display: block;
+    overflow-x: auto;
+    background: black;
+    color: #eaeaea;
+    padding: 30px;
+    overflow-x: scroll;
+    white-space: pre-wrap;
+  }
+
+  code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 2rem 0px;
+  grid-column: 1 / -1 !important;
+  text-align: center;
+}
+
+.paragraph {
+  min-width: 0px;
+  margin: 0px;
+  overflow-wrap: break-word;
+}

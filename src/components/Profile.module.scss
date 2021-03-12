@@ -1,0 +1,72 @@
+.Profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: start;
+  margin-bottom: 20px;
+  grid-row: span 5 / auto;
+  place-items: start;
+  -webkit-box-align: start;
+  padding-right: 10px;
+  grid-column: 1 / span 1 !important;
+
+  > a {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+
+    img {
+      max-width: 75px;
+      object-fit: cover;
+      box-shadow: rgb(194, 202, 214) 0px 0.2em, rgb(194, 202, 214) 0px -0.2em,
+        rgb(194, 202, 214) 0.2em 0px, rgb(194, 202, 214) -0.2em 0px;
+    }
+  }
+
+  h3 {
+    margin: 0px 0px 2rem;
+    font-size: 1.8rem;
+
+    a {
+      padding: 2px 0px 1px;
+      background-image: linear-gradient(
+        transparent 0%,
+        transparent calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) 100%
+      );
+      transition: background-position 120ms ease-in-out 0s,
+        padding 120ms ease-in-out 0s;
+      background-size: 100% 200%;
+      background-position: 0px 0px;
+      word-break: break-word;
+      cursor: pointer;
+    }
+
+    small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 80%;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .SocialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+
+    > * {
+      background: none;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    img {
+      max-width: 20px;
+    }
+  }
+}
